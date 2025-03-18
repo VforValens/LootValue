@@ -462,7 +462,7 @@ The third is marked as the ultimate color. Anything over 10000 rubles would be w
 				Count = item.StackObjectsCount
 			};
 
-			Session.ConfirmSell(tc.Id, new EFT.Trading.TradingItemReference[1] { itemRef }, bestTraderOffer.Price, new Callback(@class.method_0));
+			Session.ConfirmSell(tc.Id, [itemRef], bestTraderOffer.Price, new Callback(@class.method_0));
 			Singleton<GUISounds>.Instance.PlayUISound(EUISoundType.TradeOperationComplete);
 		}
 
